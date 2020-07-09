@@ -1,10 +1,8 @@
-/*Melik KARACA 190757079 Bil.Müh.(Ý.Ö) C grubu 
-Nesneye Yönelik Programlama BIM-104-50-50-C Bahar 2020
-PROJESÝ 3 Dr. Öðr. Üyesi Gülþah TÜMÜKLÜ ÖZYER*/
+
 
 #include "Kitap.h"
 
-Kitap::Kitap()  //Yapýcý constructor
+Kitap::Kitap()  //YapÃ½cÃ½ constructor
 {
 	
 }
