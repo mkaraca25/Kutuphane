@@ -1,26 +1,24 @@
-/*Melik KARACA 190757079 Bil.Müh.(İ.Ö) C grubu 
-Nesneye Yönelik Programlama BIM-104-50-50-C Bahar 2020
-PROJESİ 3 Dr. Öğr. Üyesi Gülşah TÜMÜKLÜ ÖZYER*/
 
-#include "Kitaplik.h" //kitaplık kütüphanem
+
+#include "Kitaplik.h" //kitaplÄ±k kÃ¼tÃ¼phanem
 #include <string> //metin karakterler
 
 int main() 
 {
-    setlocale(LC_ALL, "Turkish"); //kitabı yazdıktan sonra türkçe karakteri de düzgün yazmna kodu
+    setlocale(LC_ALL, "Turkish"); //kitabÄ± yazdÄ±ktan sonra tÃ¼rkÃ§e karakteri de dÃ¼zgÃ¼n yazmna kodu
 	char program;
 	Kitaplik kitaplik;
 
-	while (true)  //kitapları ekleme,yazdırma ve sayısını, programdan çıkış döngüsü
+	while (true)  //kitaplarÄ± ekleme,yazdÄ±rma ve sayÄ±sÄ±nÄ±, programdan Ã§Ä±kÄ±ÅŸ dÃ¶ngÃ¼sÃ¼
 	{
 		std::cout << "Kitap eklemek icin : 'A' "<< std::endl;
-		std::cout << "Kac kitap olduğunu öğrenmek icin : 'B' "<< std::endl; 
-		std::cout << "Tüm kitaplara ait bilgileri görüntülemek icin : 'C' "<< std::endl;
-		std::cout << "Programdan çıkmak için 'D' giriniz : " << std::endl;
-		std::cout << "\nBir seçenek seçin lütfen :";
+		std::cout << "Kac kitap olduÄŸunu Ã¶ÄŸrenmek icin : 'B' "<< std::endl; 
+		std::cout << "TÃ¼m kitaplara ait bilgileri gÃ¶rÃ¼ntÃ¼lemek icin : 'C' "<< std::endl;
+		std::cout << "Programdan Ã§Ä±kmak iÃ§in 'D' giriniz : " << std::endl;
+		std::cout << "\nBir seÃ§enek seÃ§in lÃ¼tfen :";
 		std::cin >> program;
 
-		if (program == 'A')  //'A'girdiğinde kitapları ekleme koşulu
+		if (program == 'A')  //'A'girdiÄŸinde kitaplarÄ± ekleme koÅŸulu
 		{
 
 			Kitap kitap;
@@ -28,23 +26,23 @@ int main()
 			int sayfaSayisi, baskiYili, baskiSayisi;
 			double fiyat;
             std::getline(std::cin,ad);
-			std::cout << "Kitabın adını giriniz :" << std::endl;
+			std::cout << "KitabÄ±n adÄ±nÄ± giriniz :" << std::endl;
 			std::getline(std::cin,ad);
-			std::cout << "Kitabın yazarını giriniz :" << std::endl;
+			std::cout << "KitabÄ±n yazarÄ±nÄ± giriniz :" << std::endl;
 			std::getline(std::cin, yazar);
-			std::cout << "Kitabın türü giriniz :" << std::endl;
+			std::cout << "KitabÄ±n tÃ¼rÃ¼ giriniz :" << std::endl;
 			std::getline(std::cin, tur);
-			std::cout << "Kitabın yayinevi giriniz :" << std::endl;
+			std::cout << "KitabÄ±n yayinevi giriniz :" << std::endl;
 			std::getline(std::cin, yayinevi);
-			std::cout << "Kitabın isbnNo giriniz :" << std::endl;
+			std::cout << "KitabÄ±n isbnNo giriniz :" << std::endl;
 			std::getline(std::cin, isbnNo);
-			std::cout << "Kitabın sayfa sayısını giriniz :" << std::endl;
+			std::cout << "KitabÄ±n sayfa sayÄ±sÄ±nÄ± giriniz :" << std::endl;
 			std::cin >> sayfaSayisi;
-			std::cout << "Kitabın fiyatını giriniz :" << std::endl;
+			std::cout << "KitabÄ±n fiyatÄ±nÄ± giriniz :" << std::endl;
 			std::cin >> fiyat;
-			std::cout << "Kitabın baskı yılını giriniz :" << std::endl;
+			std::cout << "KitabÄ±n baskÄ± yÄ±lÄ±nÄ± giriniz :" << std::endl;
 			std::cin >> baskiYili;
-			std::cout << "Kitabın baskı sayısını giriniz :" << std::endl;
+			std::cout << "KitabÄ±n baskÄ± sayÄ±sÄ±nÄ± giriniz :" << std::endl;
 			std::cin >> baskiSayisi;
 
 			kitap.setAd(ad);
@@ -57,23 +55,23 @@ int main()
 			kitap.setBaskiYili(baskiYili);
 			kitap.setBaskiSayisi(baskiSayisi);
 
-			kitaplik.addKitap(kitap); //kitapları kitaplığa ekleme
+			kitaplik.addKitap(kitap); //kitaplarÄ± kitaplÄ±ÄŸa ekleme
 		}
-		else if (program == 'B')  //kitap sayısı koşulu
+		else if (program == 'B')  //kitap sayÄ±sÄ± koÅŸulu
 		{
-			std::cout << "Kitap sayısı = " << kitaplik.getKitapSayisi() <<std::endl;
+			std::cout << "Kitap sayÄ±sÄ± = " << kitaplik.getKitapSayisi() <<std::endl;
 		}
-		else if (program == 'C')  //kitapları yazdırma koşulu
+		else if (program == 'C')  //kitaplarÄ± yazdÄ±rma koÅŸulu
 		{
 			kitaplik.print();
 		}
-		else if (program == 'D') //programdan çıkış koşulu
+		else if (program == 'D') //programdan Ã§Ä±kÄ±ÅŸ koÅŸulu
 		 {
 			return 0;
 		}
-		else          //yanlış değer girdiğinde koşulu
+		else          //yanlÄ±ÅŸ deÄŸer girdiÄŸinde koÅŸulu
 		 {
-			std::cout << "Yanlış girdiniz. Lütfen tekrar deneyiniz :" << std::endl;
+			std::cout << "YanlÄ±ÅŸ girdiniz. LÃ¼tfen tekrar deneyiniz :" << std::endl;
 		}
 	}
 }
