@@ -1,30 +1,28 @@
-/*Melik KARACA 190757079 Bil.Müh.(İ.Ö) C grubu 
-Nesneye Yönelik Programlama BIM-104-50-50-C Bahar 2020
-PROJESİ 3 Dr. Öğr. Üyesi Gülşah TÜMÜKLÜ ÖZYER*/
 
-#include "Kitaplik.h" //Kitaplık kütüphanem
 
-unsigned int Kitaplik::index = 0;  //kitap sayısı 
+#include "Kitaplik.h" //KitaplÄ±k kÃ¼tÃ¼phanem
 
-Kitaplik::Kitaplik()   //yapıcı constructor
+unsigned int Kitaplik::index = 0;  //kitap sayÄ±sÄ± 
+
+Kitaplik::Kitaplik()   //yapÄ±cÄ± constructor
 {
 }
-void Kitaplik::addKitap(Kitap& input)  //kitapları ekleme fonksiyonum
+void Kitaplik::addKitap(Kitap& input)  //kitaplarÄ± ekleme fonksiyonum
 {
-	if (index >= 10)  //index kitap sayısı 10 olduğundan uyarı koşulu
-		std::cout << "Kitaplık doldu" << std::endl;
+	if (index >= 10)  //index kitap sayÄ±sÄ± 10 olduÄŸundan uyarÄ± koÅŸulu
+		std::cout << "KitaplÄ±k doldu" << std::endl;
 	else {
 		kitaplar[index] = input;
 		index++;
 	}
 }
-unsigned int Kitaplik::getKitapSayisi() //kitapları sayısı fonksiyonum
+unsigned int Kitaplik::getKitapSayisi() //kitaplarÄ± sayÄ±sÄ± fonksiyonum
 {
 	std::cout<<"\n";
 	return index;
 }
 
-void Kitaplik::print()        //kitapları yazdırma fonksiyonum
+void Kitaplik::print()        //kitaplarÄ± yazdÄ±rma fonksiyonum
 {
 	for (int i = 0; i < index; i++) 
 	{
