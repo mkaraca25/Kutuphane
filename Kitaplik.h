@@ -1,21 +1,19 @@
-/*Melik KARACA 190757079 Bil.Müh.(İ.Ö) C grubu 
-Nesneye Yönelik Programlama BIM-104-50-50-C Bahar 2020
-PROJESİ 3 Dr. Öğr. Üyesi Gülşah TÜMÜKLÜ ÖZYER*/
 
-#ifndef KITAPLIK_H //ifndef, define ve endif  önişlemci direktifleri Polinom Sınıfı tanımının projenin 
-#define KITAPLIK_H //birden fazla dosyası içerisinde kullanımının nesne kodu (object code) bünyesinde tekrarını engeller.
+
+#ifndef KITAPLIK_H //ifndef, define ve endif  Ã¶niÅŸlemci direktifleri Polinom SÄ±nÄ±fÄ± tanÄ±mÄ±nÄ±n projenin 
+#define KITAPLIK_H //birden fazla dosyasÄ± iÃ§erisinde kullanÄ±mÄ±nÄ±n nesne kodu (object code) bÃ¼nyesinde tekrarÄ±nÄ± engeller.
 
 #include "Kitap.h"
-class Kitaplik  //kitaplık sınıfımın adı
+class Kitaplik  //kitaplÄ±k sÄ±nÄ±fÄ±mÄ±n adÄ±
 {
 public:
 
-	Kitaplik();  //yapıcı constructor
-	void addKitap(Kitap& input); //kitapları ekleme fonksiyonu çağırma
+	Kitaplik();  //yapÄ±cÄ± constructor
+	void addKitap(Kitap& input); //kitaplarÄ± ekleme fonksiyonu Ã§aÄŸÄ±rma
 
-	unsigned int getKitapSayisi(); //kitapları sayısı fonksiyonu çağırma
+	unsigned int getKitapSayisi(); //kitaplarÄ± sayÄ±sÄ± fonksiyonu Ã§aÄŸÄ±rma
 
-	void print();  //kitapları yazdırma fonksiyonu çağırma
+	void print();  //kitaplarÄ± yazdÄ±rma fonksiyonu Ã§aÄŸÄ±rma
 private:
 
 	Kitap* kitaplar = new Kitap[10];  //komposizyon
