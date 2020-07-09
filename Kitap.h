@@ -1,24 +1,22 @@
-/*Melik KARACA 190757079 Bil.Müh.(İ.Ö) C grubu 
-Nesneye Yönelik Programlama BIM-104-50-50-C Bahar 2020
-PROJESİ 3 Dr. Öğr. Üyesi Gülşah TÜMÜKLÜ ÖZYER*/
 
-#ifndef KITAP_H //ifndef, define ve endif  önişlemci direktifleri Polinom Sınıfı tanımının projenin 
-#define KITAP_H //birden fazla dosyası içerisinde kullanımının nesne kodu (object code) bünyesinde tekrarını engeller.
+
+#ifndef KITAP_H //ifndef, define ve endif  Ã¶niÃ¾lemci direktifleri Polinom SÃ½nÃ½fÃ½ tanÃ½mÃ½nÃ½n projenin 
+#define KITAP_H //birden fazla dosyasÃ½ iÃ§erisinde kullanÃ½mÃ½nÃ½n nesne kodu (object code) bÃ¼nyesinde tekrarÃ½nÃ½ engeller.
 #include <iostream>
 
-class Kitap //kitap sınıfım
+class Kitap //kitap sÃ½nÃ½fÃ½m
 {
 public:
 
-	Kitap(); //yapıcı constructor
+	Kitap(); //yapÃ½cÃ½ constructor
 
-	void setAd(std::string& input); //set fonksiyonları
+	void setAd(std::string& input); //set fonksiyonlarÃ½
 	void setYazar(std::string& input);
 	void setTur(std::string& input);
 	void setYayinevi(std::string& input);
 	void setisbnNo(std::string& input);
 
-	std::string& getAd();            //get fonksiyonları
+	std::string& getAd();            //get fonksiyonlarÃ½
 	std::string& getYazar();
 	std::string& getTur();
 	std::string& getYayinevi();
